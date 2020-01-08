@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">IntentService</string>
+    <string name="sort_button">Sort Array</string>
 </resources>
