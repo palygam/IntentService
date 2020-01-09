@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class IntentService extends android.app.IntentService {
-    private final static String TAG = "IntentService";
 
     public IntentService() {
         super("SortArrayService");
@@ -18,20 +17,12 @@ public class IntentService extends android.app.IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         sortArray();
-        Log.d(TAG, "onHandleIntent called");
-
     }
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        Log.d(TAG, "onCreate called");
-    }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "onDestroy called");
         Toast.makeText(this,"Array sorted",Toast.LENGTH_SHORT).show();
     }
 
