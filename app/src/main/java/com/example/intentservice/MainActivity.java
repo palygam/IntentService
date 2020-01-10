@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String result = intent.getStringExtra(MyIntentService.KEY);
-            info.setText( "Array Sorted" + "\n" + result);
+            info.setText(result);
         }
     }
 }
