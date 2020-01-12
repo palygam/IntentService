@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <service
-            android:name=".MyIntentService"
+            android:name=".SortedArrayIntentService"
             android:exported="false" />
 
         <activity android:name=".MainActivity">

@@ -6,13 +6,13 @@ import android.content.Intent;
 import java.util.Arrays;
 import java.util.Random;
 
-public class MyIntentService extends IntentService {
+public class SortedArrayIntentService extends IntentService {
     private int[] array;
     public static final String ACTION_INTENT_SERVICE = "com.example.intentservice";
     public static final String KEY = "KEY";
 
 
-    public MyIntentService() {
+    public SortedArrayIntentService() {
         super("SortArrayService");
     }
 
